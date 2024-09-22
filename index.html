@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Teixeirinha 25 anos de Sucesso</title>
+</head>
+<body>
+    <div class="music-player">
+        <h1>Teixeirinha 25 anos de Sucesso</h1>
+        <select id="songList" onchange="changeSong()">
+            <option value="01 - Apenas uma Flor.mp3">01 - Apenas uma Flor</option>
+            <option value="02 - Na Batalha do Amor.mp3">02 - Na Batalha do Amor</option>
+            <option value="03 - Ela Tornou-se Freira.mp3">03 - Ela Tornou-se Freira</option>
+            <option value="04 - Cinzeiro Amigo.mp3">04 - Cinzeiro Amigo</option>
+            <option value="05 - Velho Casarão.mp3">05 - Velho Casarão</option>
+            <option value="06 - Meu Velho Pai.mp3">06 - Meu Velho Pai</option>
+            <option value="07 - Coração de Luto.mp3">07 - Coração de Luto</option>
+            <option value="08 - Paulistinha Bonita.mp3">08 - Paulistinha Bonita</option>
+            <option value="09 - Que Droga de Vida.mp3">09 - Que Droga de Vida</option>
+            <option value="10 - Tordilho Negro.mp3">10 - Tordilho Negro</option>
+            <option value="11 - Ébrio de Amor.mp3">11 - Ébrio de Amor</option>
+            <option value="12 - Desafio das Peguntas.mp3">12 - Desafio das Peguntas</option>
+
+            </select>
+    <audio id="musicPlayer" controls>
+        <source id="audioSource" src="" type="audio/mp3">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <div class="player-controls">
+        <button id="playPauseBtn" onclick="playPause()">Play/Pause</button>
+        <input type="range" id="volumeControl" onchange="setVolume()" />
+        <span id="currentTime">0:00</span>
+        <progress id="progressBar" value="0" max="100"></progress>
+        <span id="duration">0:00</span>
+        </div>
+        
+    </div>
+
+    <ul>
+        <a href="./1984 - 25 Anos de Sucesso.jpg" download="1984 - 25 Anos de Sucesso.jpg"><button>Teixeirinha 1984 - 25 Anos de Sucesso.jpg</button></a>
+    </ul>
+    <script src="script.js"></script>
+</body>
+</html>
